@@ -1,0 +1,434 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+      #text-div{
+        color: brown;
+      }
+       .content{
+        color: blue;
+       }
+       .navabar li{
+        color: red;
+       }
+       .navabar li:nth-child(3){
+        color: blue;
+       }
+    </style>
+</head>
+<body style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bold;" >
+   <h1 id="text-div"> hello, how are you</h1>
+  <p class="text-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus itaque eaque error praesentium 
+    aspernatur alias placeat consequuntur possimus ipsa.</p>
+    <p class="content">Hello, welcome1</p>
+    <p class="content">Hello,welcome2</p>
+    <ul class="navabar">
+      <li>home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <Script src="obj.js" >
+        //const firstName='Nalina\'s';
+         const   firstName="Nalina's house is in bengalore";
+          // using var variable;    
+         var name="sony";
+         console.log(name); 
+         
+         // using let variable
+         let name1="nalina";
+         
+         console.log(name1);
+         
+         console.log(firstName);
+         let firstNumber=123;
+         //firstNumber="Nalina";
+         let secondNumber=123456;
+         const thirdNuber="1234";
+         console.log(firstNumber);
+         console.log(secondNumber);
+         console.log(thirdNuber);
+         
+         let add=firstNumber+secondNumber;
+         console.log(add);
+         let add1=firstNumber+thirdNuber;
+         console.log(add1); 
+         const name2 ="sony kundde nice";
+         console.log(typeof name2);
+         const value=false;
+         console.log(typeof value);
+           const num= 100;
+           console.log(num); 
+             function hello()
+              {
+                console.log("im nalina kumari ");
+             } 
+             hello();
+            //  function did(){
+            //     console.log(" sony ge vatakyala haram vestunnamu");
+            //     console.log(" vattakayalu chain sony");
+            //     console.log("sony want vatttayala curry");
+            //     console.log("she want vattakayalu from raichur");
+            //     console.log("sony is getting mental by two boys from raichur");
+            //     console.log("sony want bulkaya from rampur boys");
+                
+            //  }
+            // // did();
+              const ron="sony";
+             const nalina="nalina";
+             const don="donial";
+
+
+            function greet(name,study)
+            {
+                console.log("hello"+" "+name+" "+study);
+            }
+            greet(ron+"m,tech in oxford");
+            greet(nalina);
+            greet(don);
+      function hello( value)
+      {
+        console.log("in cm"+ " "+value);
+        return value;
+        console.log(" im in bengaore");
+        console.log("in cm"+ " "+value);
+        console.log("in cm"+ " "+value);
+        console.log("in cm"+ " "+value);
+        console.log(" im in bengaore");
+      }       
+  const width= hello(100);
+  const denminsion=[width];
+  console.log(denminsion);
+
+   function addtion( num1, num2)
+   {
+    return num1+num2;
+   }
+  const firstValue= addtion(10,15);
+  const secondValue=addtion(20,13);
+  const annomus=function( num1, num2)
+  {
+    return num1+num2;
+   };
+   const thirdv=annomus(100,200);
+   const result=[firstValue,secondValue,thirdv];
+  console.log(result);
+   // 
+   const arrow=(num1,num2)=>num1*num2;
+   const person={
+    name:"Emma",
+    lastName:"waston",
+    married:false,
+    age:27,
+    friends:["naya","bindu"],
+    greettting : function (){
+      console.log("im in raichur");
+    }
+    };
+   console.log(person.name);
+   console.log(person.greettting());
+   
+   //logical operators;
+   const userName="Nalina";
+   const age=21;
+   if(userName=="nalina" && userName=="Nalina")
+   { 
+    console.log("successfully login");
+   }
+   else{
+    console.log("wrong value please try again");
+   }
+   const dice=1;
+   switch (dice)
+   {
+    case 1:
+      console.log("you got one");   
+      break;
+    case 2:
+      console.log(" you got two");
+      case 3:
+     console.log("you get three");
+        break;
+        case 4:
+    console.log("you got four");
+          break;
+     case 5:
+   console.log("you got five");
+      break;
+      case 6:
+   console.log("you got six");
+        break;
+        default:
+          ("your not roll the dice");
+   }
+    let ammount=15;
+     while (ammount>10){
+      console.log("i have the ammount of"+ammount+"for doing  shooping");
+      ammount--;
+     }
+     const first1="Nalina";
+     const age1 =27;
+     const sentence="hey it's "+first1+"she is"+age1+"years of old";
+     console.log(sentence);
+     const vakle=`hey it's ${first1} she is ${age1}years of old .Math Calc ${(4+3)}`
+     console.log(vakle);
+      const fruiteNames=["graphes","apple","bannaa"];
+     console.log(fruiteNames.length);
+     console.log( fruiteNames[fruiteNames.length-1]);
+      const names=["nalina","sony","nayana"];
+      //carrya concat;
+     const val= fruiteNames.concat(names);
+    // console.log(reverse(vakle));
+     console.log(val);
+
+     // push;
+     val.push("badam");
+     val.push("cashes");
+     console.log(val);
+     //pop
+     val.pop();
+     console.log(val);
+     //unshift
+     val.unshift("balckgraphes");
+     console.log(val);
+     //shift
+     val.shift();
+     console.log(val);
+     
+     //array and for loop
+     const  firstNm=["nalina","sony","naveen"];
+     const newName="pirangi";
+     const newArray=[];
+      for ( let i=0; i<firstNm.length; i++){
+      // console.log(i);
+      //console.log( firstNm[i]);
+      //let fullN1=`${firstNm[i]} ${newName}`;
+      const full=firstNm[i].concat(newName);
+      newArray.push(full);
+      }
+      console.log(firstNm);
+      console.log(newArray);
+     
+     
+      // functions, return,if,arrays,for loop,objects
+      const gas=[20,40,50,100,400];
+      const food=[30,50,30];
+      function calculateTotal(arry){
+        let total=0;
+          for ( let i=0; i<arry.length; i++){
+             total +=arry[i]; //total=total+arry[i]
+          // console.log(arry[i]);
+           //console.log(total);
+           }
+          if(total>100){
+          console.log("heyy you are spending too much");
+            return total;
+          }else{
+           console.log("hey you are total is spending less than 100");
+           }
+          
+          return total;
+        }
+        let gasTotal= calculateTotal(gas);
+        let foodTotal=calculateTotal(food);
+        let randomvalues=calculateTotal([1,2,3,4,5,6,7,8,9,10]);
+         
+        // console.log(foodTotal);
+        // console.log(gasTotal); 
+      
+         
+   // obejct form
+        console.log({
+          gas:gasTotal,
+          food:foodTotal,
+          random:randomvalues
+
+        });
+        // in prmitive data type 
+        let number1=10;
+        let number2=number1;
+        number2=20;
+        console.log(`the first number is  ${number1}`);
+        console.log(`the second number is ${number2}`);
+
+
+        const person1={ name:"emma"};
+        const person2={...person1};
+        person2.name="nalina";
+        console.log(`the person1 name is: ${person1.name}`);
+        console.log(`the person2 name is: ${person2.name}`);
+
+        //global variable
+        let golbalscope="emamma";
+        golbalscope="harry";
+         
+        function cal(){
+          console.log(golbalscope);
+          golbalscope="orange";
+
+          function inner(){
+            golbalscope=" inner function name";
+            console.log(golbalscope);
+          }
+          inner();
+        }
+        cal();
+        if (true){
+          console.log(golbalscope);
+          golbalscope="buleburry";
+        }
+        console.log(`hey this is ${golbalscope} and im awesome`);
+
+          let name3="nali";
+          // in the global scope the 
+          // let boom;
+
+          function rtr(){
+            //const name3="srikanth";
+            console.log(name3);
+
+            //console.log(name3);
+            //const name3="sony";
+          //   console.log(name3);
+          //   let lastName="waston";
+          //   boom=" im in block scope but i can access in out the block scope becuse im not delcare the variable name";
+          // console.log(boom);
+          }
+          //console.log(lastName); // local scope so it will not access the outside the block.    
+          rtr();
+          
+          if ( true){
+            
+          const age2 =20;
+          console.log(age2);
+          console.log(`${age2}`);
+
+          }
+          //console.log(age2);
+          //console.log(boom);
+          console.log(`im nalina from ${name3}`);
+          console.log(`im nalina form nalinakumari from Raichur${name3} i ${name3} want to become a fullstack developer`);
+          console.log(`please god help me om namha shivaya ${name3}`);
+          console.log(`${name3}`);
+          console.log(`${name3}`);
+          console.log("im good doing the work javascript is very good im on the write im nalina kumari work is worship");
+    
+          
+          const globalNumber=5;
+          
+          function add5(num1,num2){
+            const globalNumber=40;
+            const result=num1+num2+globalNumber;
+            //console.log(result);
+            
+            function multipy1(){
+              const mul2=result*globalNumber;
+              console.log(mul2);
+            }
+            multipy1();
+            return result;
+
+          }
+          console.log(add5(3,4));
+          console.log("im nalina from raichur");
+          console.log(" im nalina kumari");
+          console.log("im going to shivaji nagar");
+          console.log("na");
+          console.log("nalina kumari ");
+          console.log("im going to live");
+          console.log("im nalina kumari from raichur callback function is very good opportunity");
+          console.log("callback function, higher order functions, function as first class object");
+        function greet(firstName){
+          lastName="srikanth";
+          console.log(`Goog morning ${firstName} my name is ${lastName}`);
+
+        }
+        let fir;
+        function morning(fir){
+         // console.log("good mprning");
+          return "good morning"+fir;
+        }
+        greet("Nalina");
+        function greet1(fir,cb){
+        
+         const last="sony";
+          console.log(`Hi goodmorning ${fir} my name is ${last}`);
+        }
+      greet1("nalina",morning);
+         const people=[{name:"Emma", age:27, position:"the leader"}
+          ,{name:"nalina", age:28, position:"lead"},
+          {name:"sony",age:29, position:"traine"}
+          
+         ];
+         function showDetails(person){
+          console.log(person.name);
+         }
+         people.forEach(showDetails);
+         people.forEach(function(item){
+          console.log(item);
+        });
+        const ages=people.map(function (person){
+          //console.log(person);
+          return `<h1>${person.age}</h1>`;
+        });
+        console.log(ages);
+        const newArrayfliter=people.filter(function(person){
+          return person.age>=30;
+        });
+        console.log(newArrayfliter);
+        document.body.innerHTML=ages.join("");
+    // find 
+          document.write("javascript") ;
+          document.write(" asiaa data pvt ltd");
+          document.write("3.5 years of expereice");
+          console.log("nalina");
+          console.log("sumsung");
+          console.log("oppo");
+          
+          const newfind1=[{ name: "nalina", age:24, salary:200},
+          { name: "wilson", age:23, salary:500},
+          { name: "summel", age:25, salary:600}];
+          
+          const newfind=newfind1.reduce(function( acc, currentvallue){
+            console.log(acc);
+            console.log(currentvallue.salary);
+            acc +=currentvallue.salary;
+            return acc;
+          },0);
+          console.log( newfind);
+           const number=25.5;
+          const ruslt=Math.floor(number);
+           const result1=Math.ceil(number);
+           console.log(ruslt);
+           console.log(result1);
+           const rs2=Math.sqrt(9*9);
+           console.log(rs2);
+           const date=new Date("01/27/2021");
+           console.log(date);
+           const months=["jan","feb","march","apirl","may","june","july","aug","sep","oct","nov","dec"];
+           console.log(months[date.getMonth()]);
+           const days=["sunday", "monday","tuesday", "wednesday", "thursday","friday","satday"];
+           console.log(days[date.getDay()]);
+           console.log(date.getFullYear());
+           const fulldate =`${days[date.getDay()]}, ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+           console.log(fulldate);
+                  //document.body.innerHTML=fulldate;
+                  //document.write(fulldate);
+                 // console.log(document);
+                alert("hiiii");
+                confirm();
+                 prompt();
+                 open();
+                 //close();
+                 setTimeout(
+                  function mesg(){
+                    alert("im using setTimeout() method");
+                  },2000
+                 );
+
+
+              </Script>
+</body>
+</html> 
